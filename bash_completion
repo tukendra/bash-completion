@@ -614,7 +614,7 @@ _comp_compgen()
                     printf 'bash_completion: %s: -%s: `-x %s'\'' is already specified\n' "$FUNCNAME" "$_opt" "$_xcmd" >&2
                     return 2
                 fi
-                ;;&
+                ;;
             i) _icmd=$OPTARG ;;
             x) _xcmd=$OPTARG ;;
             *)
@@ -955,7 +955,7 @@ _comp_get_words()
                     echo "bash_completion: $FUNCNAME: -$flag: invalid variable name \`$OPTARG'" >&2
                     return 1
                 fi
-                ;;&
+                ;;
             c) vcur=$OPTARG ;;
             i) vcword=$OPTARG ;;
             n) exclude=$OPTARG ;;
